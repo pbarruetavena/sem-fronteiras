@@ -67,3 +67,56 @@ header > div:has(> h3) {
 header > div > h3 {
     margin: auto;
 }
+
+.menu {
+    background-color: #ffffff;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  .menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .menu-item {
+    cursor: pointer;
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .menu-item:hover,
+  .menu-item.selected {
+    color: #007BFF;
+    border-bottom: 2px solid #007BFF;
+  }
+  
+  .containers {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .container {
+    display: none;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  .container.visible {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+  }
