@@ -1,2 +1,69 @@
-h1 {
+@import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root {
+    --verde-escuro: #628B2D;
+    --branco: #e8e8e8;
+}
+
+html {
+    height: 100%;
+    box-sizing: border-box;
+    font-family: "Host Grotesk", sans-serif;
+}
+body {
+    padding: 10px;
+    margin: 0px;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 10px;
+    margin: 25px 0px;
+}
+img.logo {
+    height: 50px;
+}
+#cont-btn {
+    display: flex;
+    flex-direction: row;
+    gap: 13px;
+    align-items: center;
+}
+#cont-btn a.btn {
+    border: 1px solid var(--verde-escuro);
+    color: var(--verde-escuro);
+    border-radius: 5px;
+    height: min-content;
+    padding: 10px 10px;
+    width: 80px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+#cont-btn a.btn:hover {
+    cursor: pointer;
+    background-color: var(--verde-escuro);
+    color: white;
+}
+#cont-btn a.btn:link,
+#cont-btn a.btn:visited,
+#cont-btn a.btn:hover,
+#cont-btn a.btn:active {
+    text-decoration: none;
+}
+
+#titulo-header {
+    font-size: 30px;
+    font-weight: normal;
+    /* margin: 30px 0px 10px 15px; */
+}
+header > div:has(> h3) {
+    margin-left: 30px;
+}
+header > div > h3 {
+    margin: auto;
 }
