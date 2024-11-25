@@ -6,11 +6,41 @@
     <title>Conversa sem fronteiras</title>
     <link rel="icon" href="imgs/mundo.png" type="image/x-icon">
     <link rel="stylesheet" href="style/index.css">
+    <script src="https://kit.fontawesome.com/633a590c1f.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
     <header>
-        <div>
+        <div id="left-header">
+            <!-- <select id="select-idioma">
+                <option value="br"><img src="https://goodies.icons8.com/web/common/header/flags/br.svg">Brasil</option>
+                <option value="en"><img width="48" height="48" src="https://img.icons8.com/color/48/brazil-circular.png" alt="brazil-circular"/>EUA</option>
+            </select> -->
+            <div class="custom-select">
+                <div class="selected-option">
+                    <img id="selected-flag" src="https://img.icons8.com/color/48/brazil.png" alt="Flag">
+                    <span id="selected-text">Português</span>
+                    <i class="fa-solid fa-caret-down"></i>
+                </div>
+                <div class="options">
+                    <div class="option" data-value="br" data-img="https://img.icons8.com/color/48/brazil.png">
+                        <img src="https://img.icons8.com/color/48/brazil.png" alt="Flag">
+                        <span>Português</span>
+                    </div>
+                    <div class="option" data-value="en" data-img="https://img.icons8.com/color/48/usa.png">
+                        <img src="https://img.icons8.com/color/48/usa.png" alt="Flag">
+                        <span>English</span>
+                    </div>
+                    <div class="option" data-value="fr" data-img="https://img.icons8.com/color/48/congo.png">
+                        <img src="https://img.icons8.com/color/48/congo.png" alt="Flag">
+                        <span>Français</span>
+                    </div>
+                    <div class="option" data-value="ar" data-img="https://img.icons8.com/color/48/syria.png">
+                        <img src="https://img.icons8.com/color/48/syria.png" alt="Flag">
+                        <span>عربي</span>
+                    </div>
+                </div>
+            </div>
             <!-- <img class="logo" src="imgs/logo.png" alt="ícone sem fronteiras"> -->
             <h3 id="titulo-header">Conversa Sem Fronteiras</h3>
         </div>
@@ -21,6 +51,7 @@
     </header>
 
     <main>
+        <!-- <img id="img-lateral" src="imgs/mundo.png" alt="mundo"> -->
         <nav class="menu">
             <ul>
               <li class="menu-item" data-target="nos">Nós</li>
@@ -38,6 +69,21 @@
             <div id="contribua" class="container">Conteúdo sobre "Contribua".</div>
           </div>
     </main>
+
+    <footer>
+        <img class="logo" src="imgs/logo.png" alt="ícone sem fronteiras">
+        <div id="container-right-footer">
+            <div id="container-txt-footer">Sem Fronteiras</div>
+            <div id="container-icones">
+                <a class="btn-footer" id="whatsapp" href=""><i class="fa-brands fa-whatsapp"></i></a>
+                <a class="btn-footer" id="instagram" href="https://www.instagram.com/conversa_sem_fronteiras/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <!-- <a class="btn-footer" href=""><i class="fa-brands fa-youtube"></i></a> -->
+                <!-- <a class="btn-footer" href=""><i class="fa-brands fa-twitter"></i></a> -->
+                <a class="btn-footer" id="linkedin" href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                <!-- <a class="btn-footer" href=""><i class="fa-brands fa-discord"></i></a> -->
+            </div>
+        </div>
+    </footer>
     
     <script src="script/index.js"></script>
 </body>

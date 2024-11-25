@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 :root {
-    --verde-escuro: #628B2D;
+    /* 628B2D */
+    --verde-escuro: #6f9d33;
     --branco: #e8e8e8;
 }
 
@@ -11,21 +12,78 @@ html {
     font-family: "Host Grotesk", sans-serif;
 }
 body {
-    padding: 10px;
+    padding: 0px;
     margin: 0px;
     height: 100%;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
+
+ /* seletor de linguas */
+ .custom-select {
+  position: relative;
+  width: 130px;
+  border: 1px solid var(--verde-escuro);
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+}
+.custom-select i {
+  margin-left: auto;
+}
+
+.selected-option {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.selected-option img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  border-radius: 3px;
+}
+
+.options {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-top: none;
+  z-index: 10;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.option:hover {
+  background-color: #f1f1f1;
+}
+
+.option img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  border-radius: 3px;
+}
+
+
 
 header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 0px 10px;
-    margin: 25px 0px;
-}
-img.logo {
-    height: 50px;
+    padding: 25px 10px;
 }
 #cont-btn {
     display: flex;
@@ -59,6 +117,7 @@ img.logo {
 #titulo-header {
     font-size: 30px;
     font-weight: normal;
+    margin-left: 30px;
     /* margin: 30px 0px 10px 15px; */
 }
 header > div:has(> h3) {
@@ -67,10 +126,14 @@ header > div:has(> h3) {
 header > div > h3 {
     margin: auto;
 }
+#left-header {
+  display: flex;
+  flex-direction: row;
+}
+
+
 
 .menu {
-    background-color: #ffffff;
-    border-bottom: 1px solid #ccc;
     padding: 10px 0;
     text-align: center;
   }
@@ -93,21 +156,20 @@ header > div > h3 {
   
   .menu-item:hover,
   .menu-item.selected {
-    color: #007BFF;
-    border-bottom: 2px solid #007BFF;
+    color: #ffffff;
+    border-bottom: 2px solid #ffffff;
   }
   
   .containers {
     max-width: 600px;
-    margin: 20px auto;
+    margin: 20px auto 0px auto;
     padding: 20px;
     text-align: center;
   }
   
   .container {
     display: none;
-    background-color: #ffffff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
     border-radius: 5px;
     padding: 20px;
     opacity: 0;
@@ -120,3 +182,73 @@ header > div > h3 {
     opacity: 1;
     transform: translateY(0);
   }
+
+  main {
+    background-color: var(--verde-escuro);
+    flex-grow: 1;
+    position: relative
+  }
+  #img-lateral {
+    position: absolute;
+    width: 550px;
+    top: -50px;
+    left: -280px;
+  }
+
+
+  /* footer  - final da pagina */
+footer {
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+footer img.logo {
+  width: 90px;
+}
+#container-right-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+#container-txt-footer {
+  font-size: 20px;
+}
+#container-icones {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 5px;
+}
+#container-icones a,
+#container-icones a:link,
+#container-icones a:visited,
+#container-icones a:active {
+  color: black;
+}
+#container-icones a {
+  padding: 7px 10px;
+  border-radius: 50px;
+  border: 1px solid white;
+}
+#container-icones a i {
+  font-size: 23px;
+}
+#container-icones #linkedin {
+  padding-left: 10px;
+  background-color: #0066C7;
+  color: white;
+}
+#container-icones #whatsapp {
+  background-color: #33D951;
+  color: white;
+}
+#container-icones #instagram {
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+  color: white;
+}
+#container-icones a:hover {
+  border-color: black;
+
+}
