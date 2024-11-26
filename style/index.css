@@ -6,6 +6,11 @@
     --branco: #e8e8e8;
 }
 
+#google_translate_element, iframe.skiptranslate, #goog-gt-tt {
+    display: none !important;
+    visibility: hidden !important;
+}
+
 html {
     height: 100%;
     box-sizing: border-box;
@@ -13,6 +18,7 @@ html {
 }
 
 body {
+    top: 0 !important;
     padding: 0px;
     margin: 0px;
     height: 100%;
@@ -22,14 +28,14 @@ body {
     justify-content: flex-start;
 }
 
-/* Seletor de linguas */
-.custom-select {
-    position: relative;
-    width: 130px;
-    border: 1px solid var(--verde-escuro);
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 12px;
+ /* seletor de linguas */
+ .custom-select {
+  position: relative;
+  width: 135px;
+  border: 1px solid var(--verde-escuro);
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
 }
 
 .custom-select i {
@@ -96,17 +102,17 @@ header {
 }
 
 #cont-btn a.btn {
-    border: 2px solid var(--verde-escuro); /* Borda mais espessa */
+    border: 2px solid var(--verde-escuro); 
     color: var(--verde-escuro);
-    border-radius: 25px; /* Borda arredondada */
+    border-radius: 25px; 
     height: 45px;
     width: 180px;
     text-align: center;
-    line-height: 45px; /* Alinha o texto verticalmente */
+    line-height: 45px; 
     font-weight: bold;
     text-decoration: none;
     font-size: 16px;
-    transition: all 0.3s ease; /* Transição suave */
+    transition: all 0.3s ease;
     display: inline-block;
     position: relative;
 }
@@ -114,12 +120,12 @@ header {
 #cont-btn a.btn:hover {
     background-color: var(--verde-escuro);
     color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra ao passar o mouse */
-    transform: translateY(-3px); /* Leve movimento ao passar o mouse */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px); 
 }
 
 #cont-btn a.btn:active {
-    transform: translateY(1px); /* Efeito de clique */
+    transform: translateY(1px); 
 }
 
 #cont-btn a.btn:link,
@@ -129,12 +135,12 @@ header {
 }
 
 #cont-btn a.btn:focus {
-    outline: none; /* Remove contorno ao clicar */
-    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1); /* Contorno suave ao focar */
+    outline: none; 
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1); 
 }
 
 #cont-btn a.btn:first-child {
-    margin-right: 10px; /* Espaço entre os botões */
+    margin-right: 10px; 
 }
 
 #titulo-header {
@@ -192,6 +198,10 @@ header > div > h3 {
 }
 
 .container {
+    text-align: justify;
+  }
+  
+  .container {
     display: none;
     border-radius: 5px;
     padding: 20px;
