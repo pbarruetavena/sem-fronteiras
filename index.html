@@ -12,10 +12,6 @@
 
     <header>
         <div id="left-header">
-            <!-- <select id="select-idioma">
-                <option value="br"><img src="https://goodies.icons8.com/web/common/header/flags/br.svg">Brasil</option>
-                <option value="en"><img width="48" height="48" src="https://img.icons8.com/color/48/brazil-circular.png" alt="brazil-circular"/>EUA</option>
-            </select> -->
             <div class="custom-select">
                 <div class="selected-option">
                     <img id="selected-flag" src="https://img.icons8.com/color/48/brazil.png" alt="Flag">
@@ -41,17 +37,21 @@
                     </div>
                 </div>
             </div>
-            <!-- <img class="logo" src="imgs/logo.png" alt="ícone sem fronteiras"> -->
+             <!-- <img class="logo" src="imgs/logo.png" alt="ícone sem fronteiras"> -->
             <h3 id="titulo-header">Conversa Sem Fronteiras</h3>
         </div>
         <div id="cont-btn">
-            <a class="btn" href="">Entrar</a>
-            <a class="btn" href="">Registrar</a>
+            <a id="entrar-btn" class="btn" href="login.html">Entrar</a>
+            <a id="registrar-btn" class="btn" href="registrar.html">Registrar</a>
+        </div>
+         <div id="right-header">
+            <!-- coisa horrenda -->
+            <span id="saudacao" style="display: none;">Bem-vindo, <span id="nome-usuario"></span>!</span>
+            <button id="logout-btn" style="display:none;">Logout</button>
         </div>
     </header>
 
     <main>
-        <!-- <img id="img-lateral" src="imgs/mundo.png" alt="mundo"> -->
         <nav class="menu">
             <ul>
               <li class="menu-item" data-target="nos">Nós</li>
@@ -60,31 +60,27 @@
               <li class="menu-item" data-target="objetivos">Objetivos</li>
               <li class="menu-item" data-target="contribua">Contribua</li>
             </ul>
-          </nav>
-          <div class="containers">
+        </nav>
+        <div class="containers">
             <div id="nos" class="container">Conteúdo sobre "Nós".</div>
             <div id="crise" class="container">Conteúdo sobre "Crise".</div>
             <div id="inclusao" class="container">Conteúdo sobre "Inclusão".</div>
             <div id="objetivos" class="container">Conteúdo sobre "Objetivos".</div>
             <div id="contribua" class="container">Conteúdo sobre "Contribua".</div>
-          </div>
+        </div>
     </main>
 
     <footer>
-        <img class="logo" src="imgs/logo.png" alt="ícone sem fronteiras">
+
         <div id="container-right-footer">
             <div id="container-txt-footer">Sem Fronteiras</div>
             <div id="container-icones">
                 <a class="btn-footer" id="whatsapp" href=""><i class="fa-brands fa-whatsapp"></i></a>
                 <a class="btn-footer" id="instagram" href="https://www.instagram.com/conversa_sem_fronteiras/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                <!-- <a class="btn-footer" href=""><i class="fa-brands fa-youtube"></i></a> -->
-                <!-- <a class="btn-footer" href=""><i class="fa-brands fa-twitter"></i></a> -->
                 <a class="btn-footer" id="linkedin" href=""><i class="fa-brands fa-linkedin-in"></i></a>
-                <!-- <a class="btn-footer" href=""><i class="fa-brands fa-discord"></i></a> -->
             </div>
         </div>
     </footer>
-    
     <script src="script/index.js"></script>
 </body>
 </html>
