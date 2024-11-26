@@ -6,12 +6,18 @@
     --branco: #e8e8e8;
 }
 
+#google_translate_element, iframe.skiptranslate, #goog-gt-tt {
+    display: none !important;
+    visibility: hidden !important;
+}
+
 html {
     height: 100%;
     box-sizing: border-box;
     font-family: "Host Grotesk", sans-serif;
 }
 body {
+    top: 0 !important;
     padding: 0px;
     margin: 0px;
     height: 100%;
@@ -24,7 +30,7 @@ body {
  /* seletor de linguas */
  .custom-select {
   position: relative;
-  width: 130px;
+  width: 135px;
   border: 1px solid var(--verde-escuro);
   border-radius: 5px;
   cursor: pointer;
@@ -101,6 +107,7 @@ header {
     text-align: center;
     text-decoration: none;
     transition: background-color 0.3s ease;
+    min-width: fit-content;
 }
 #cont-btn a.btn:hover {
     cursor: pointer;
@@ -164,7 +171,7 @@ header > div > h3 {
     max-width: 600px;
     margin: 20px auto 0px auto;
     padding: 20px;
-    text-align: center;
+    text-align: justify;
   }
   
   .container {
