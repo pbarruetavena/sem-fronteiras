@@ -168,9 +168,9 @@ header > div > h3 {
   }
   
   .containers {
-    max-width: 600px;
-    margin: 20px auto 0px auto;
-    padding: 20px;
+    max-width: 90vw;
+    margin: 0px auto 0px auto;
+    padding: 10px;
     text-align: justify;
   }
   
@@ -178,16 +178,25 @@ header > div > h3 {
     display: none;
     /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
     border-radius: 5px;
-    padding: 20px;
+    padding: 10px 20px;
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.3s ease, transform 0.3s ease;
   }
   
   .container.visible {
-    display: block;
+    display: flex;
     opacity: 1;
     transform: translateY(0);
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+  }
+
+  .container h1,
+  .container p,
+  .container ul {
+    margin: 0px;
   }
 
   main {
@@ -258,4 +267,17 @@ footer img.logo {
 #container-icones a:hover {
   border-color: black;
 
+}
+
+/* telas de notebook */
+@media (max-height: 680px) {
+  .containers .container p {
+    font-size: 14px;
+  }
+  .containers .container ul {
+    font-size: 14px;
+  }
+  .containers .container h1 {
+    font-size: 30px;
+  }
 }
