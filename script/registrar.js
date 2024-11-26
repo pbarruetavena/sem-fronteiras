@@ -3,8 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const emailInput = document.getElementById("email");
     const passwordInput = document.getElementById("password");
     const nameInput = document.getElementById("name");
-    const confirmPasswordInput = document.getElementById("confirm-password"); 
-    const backToHomeButton = document.getElementById("back-to-home");
+    const confirmPasswordInput = document.getElementById("confirm-password");
     //Deus abençoe o Const
     registerForm.addEventListener("submit", (e) => {
         e.preventDefault();
@@ -31,9 +30,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
         alert("Registro realizado com sucesso!");
         window.location.href = "login.html"; // Redireciona para a página de login após o registro
-    });
-
-    backToHomeButton.addEventListener("click", () => {
-        window.location.href = "index.html"; 
     });
 });

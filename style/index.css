@@ -3,7 +3,19 @@
 :root {
     /* 628B2D */
     --verde-escuro: #6f9d33;
+    --verde-escuro-1: #243b06;
     --branco: #e8e8e8;
+}
+
+#google_translate_element, iframe.skiptranslate, #goog-gt-tt {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html {
@@ -13,6 +25,7 @@ html {
 }
 
 body {
+    top: 0 !important;
     padding: 0px;
     margin: 0px;
     height: 100%;
@@ -22,10 +35,14 @@ body {
     justify-content: flex-start;
 }
 
-/* Seletor de linguas */
+a {
+    text-decoration: none;
+}
+
+/* seletor de linguas */
 .custom-select {
     position: relative;
-    width: 130px;
+    width: 135px;
     border: 1px solid var(--verde-escuro);
     border-radius: 5px;
     cursor: pointer;
@@ -49,7 +66,6 @@ body {
     border-radius: 3px;
 }
 
-/* Estilo para as opções */
 .options {
     display: none;
     position: absolute;
@@ -85,78 +101,58 @@ header {
     flex-direction: row;
     justify-content: space-between;
     padding: 25px 10px;
-    align-items: center;
 }
 
-#cont-btn {
+.cont-btn {
     display: flex;
     flex-direction: row;
     gap: 13px;
     align-items: center;
 }
 
-#cont-btn a.btn {
-    border: 2px solid var(--verde-escuro); /* Borda mais espessa */
+.cont-btn .btn {
+    border: 1px solid var(--verde-escuro);
     color: var(--verde-escuro);
-    border-radius: 25px; /* Borda arredondada */
-    height: 45px;
-    width: 180px;
+    border-radius: 5px;
+    height: min-content;
+    padding: 10px 10px;
+    width: 80px;
     text-align: center;
-    line-height: 45px; /* Alinha o texto verticalmente */
-    font-weight: bold;
     text-decoration: none;
-    font-size: 16px;
-    transition: all 0.3s ease; /* Transição suave */
-    display: inline-block;
-    position: relative;
+    transition: background-color 0.3s ease;
+    min-width: fit-content;
 }
-
-#cont-btn a.btn:hover {
+.cont-btn .btn:hover {
+    cursor: pointer;
     background-color: var(--verde-escuro);
     color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra ao passar o mouse */
-    transform: translateY(-3px); /* Leve movimento ao passar o mouse */
 }
-
-#cont-btn a.btn:active {
-    transform: translateY(1px); /* Efeito de clique */
-}
-
-#cont-btn a.btn:link,
-#cont-btn a.btn:visited {
+.cont-btn .btn:link,
+.cont-btn .btn:visited,
+.cont-btn .btn:hover,
+.cont-btn .btn:active {
     text-decoration: none;
-    color: inherit;
-}
-
-#cont-btn a.btn:focus {
-    outline: none; /* Remove contorno ao clicar */
-    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1); /* Contorno suave ao focar */
-}
-
-#cont-btn a.btn:first-child {
-    margin-right: 10px; /* Espaço entre os botões */
 }
 
 #titulo-header {
     font-size: 30px;
     font-weight: normal;
     margin-left: 30px;
+    /* margin: 30px 0px 10px 15px; */
 }
-
 header > div:has(> h3) {
     margin-left: 30px;
 }
-
 header > div > h3 {
     margin: auto;
 }
-
 #left-header {
-  display: flex;
-  flex-direction: row;
+    display: flex;
+    flex-direction: row;
 }
 
-/* Menu */
+
+
 .menu {
     padding: 10px 0;
     text-align: center;
@@ -185,33 +181,45 @@ header > div > h3 {
 }
 
 .containers {
-    max-width: 600px;
-    margin: 20px auto 0px auto;
-    padding: 20px;
-    text-align: center;
+    max-width: 90vw;
+    margin: 0 auto 0 auto;
+    padding: 10px;
+    text-align: justify;
 }
 
 .container {
     display: none;
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
     border-radius: 5px;
-    padding: 20px;
+    padding: 10px 20px;
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .container.visible {
-    display: block;
+    display: flex;
     opacity: 1;
     transform: translateY(0);
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+}
+
+.container h1,
+.container p {
+    margin: 0;
+}
+
+.container ul {
+    margin: 1rem;
 }
 
 main {
     background-color: var(--verde-escuro);
     flex-grow: 1;
-    position: relative;
+    position: relative
 }
-
 #img-lateral {
     position: absolute;
     width: 550px;
@@ -219,7 +227,8 @@ main {
     left: -280px;
 }
 
-/* Footer */
+
+/* footer  - final da pagina */
 footer {
     height: 100px;
     display: flex;
@@ -227,124 +236,64 @@ footer {
     justify-content: center;
     align-items: center;
 }
-
 footer img.logo {
     width: 90px;
 }
-
 #container-right-footer {
     display: flex;
     flex-direction: column;
     gap: 4px;
 }
-
 #container-txt-footer {
     font-size: 20px;
 }
-
 #container-icones {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     gap: 5px;
 }
-
 #container-icones a,
 #container-icones a:link,
 #container-icones a:visited,
 #container-icones a:active {
     color: black;
 }
-
 #container-icones a {
     padding: 7px 10px;
     border-radius: 50px;
     border: 1px solid white;
 }
-
 #container-icones a i {
     font-size: 23px;
 }
-
 #container-icones #linkedin {
     padding-left: 10px;
     background-color: #0066C7;
     color: white;
 }
-
 #container-icones #whatsapp {
     background-color: #33D951;
     color: white;
 }
-
 #container-icones #instagram {
     background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
     color: white;
 }
-
 #container-icones a:hover {
     border-color: black;
+
 }
 
-#logout-btn {
-    border: 2px solid var(--verde-escuro);
-    color: var(--verde-escuro);
-    border-radius: 25px;
-    height: 45px;
-    width: 120px;
-    text-align: center;
-    line-height: 45px;
-    font-weight: bold;
-    text-decoration: none;
-    font-size: 16px;
-    transition: all 0.3s ease;
-    display: inline-block;
-    position: relative;
-    margin-left: auto; 
-}
-
-#logout-btn:hover {
-    background-color: var(--verde-escuro);
-    color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transform: translateY(-3px); 
-}
-
-#logout-btn:active {
-    transform: translateY(1px); 
-}
-
-#logout-btn:link,
-#logout-btn:visited {
-    text-decoration: none;
-    color: inherit;
-}
-
-#logout-btn:focus {
-    outline: none;
-    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
-}
-
-#cont-btn {
-    display: flex;
-    flex-direction: row;
-    gap: 13px;
-    align-items: center;
-    margin-left: auto; 
-}
-
-#saudacao {
-    font-size: 20px;
-    font-weight: bold;
-    color: var(--verde-escuro);
-    margin-right: 20px;
-    text-align: right;
-    font-family: "Nunito", sans-serif;
-    letter-spacing: 1px;
-}
-
-#saudacao span {
-    font-size: 22px;
-    font-weight: 600;
-    color: #333;
+/* telas de notebook */
+@media (max-height: 680px) {
+    .containers .container p {
+        font-size: 14px;
+    }
+    .containers .container ul {
+        font-size: 14px;
+    }
+    .containers .container h1 {
+        font-size: 30px;
+    }
 }

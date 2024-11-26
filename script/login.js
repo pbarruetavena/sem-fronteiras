@@ -2,7 +2,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const emailInput = document.getElementById("email");
     const passwordInput = document.getElementById("password");
     const emailError = document.getElementById("email-error");
-    const backToHomeButton = document.getElementById("back-to-home");
 
     // Validação de email com Regex
     emailInput.addEventListener("input", () => {
@@ -42,9 +41,5 @@ document.addEventListener("DOMContentLoaded", () => {
         } else {
             alert("Email ou senha incorretos.");
         }
-    });
-
-    backToHomeButton.addEventListener("click", () => {
-        window.location.href = "index.html"; // Redireciona para a página inicial
     });
 });
