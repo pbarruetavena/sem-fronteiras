@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
             localStorage.setItem("userLogged", JSON.stringify(user));
 
             alert("Login realizado com sucesso!");
-            window.location.href = "index.html"; // Redirecionar após login
+            window.location.href = "../../index.html"; // Redirecionar após login
         } else {
             alert("Email ou senha incorretos.");
         }
