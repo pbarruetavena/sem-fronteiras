@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversa sem fronteiras</title>
+    <link rel="icon" href="../../imgs/mundo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../style/index.css">
+    <link rel="stylesheet" href="../../style/login.css">
+    <script src="https://kit.fontawesome.com/633a590c1f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="google_translate_element"></div>
+<header>
+    <div id="left-header">
+        <!-- <select id="select-idioma">
+            <option value="br"><img src="https://goodies.icons8.com/web/common/header/flags/br.svg">Brasil</option>
+            <option value="en"><img width="48" height="48" src="https://img.icons8.com/color/48/brazil-circular.png" alt="brazil-circular"/>EUA</option>
+        </select> -->
+        <div class="custom-select">
+            <div class="selected-option">
+                <img id="selected-flag" src="https://img.icons8.com/color/48/brazil.png" alt="Flag">
+                <span id="selected-text" class="skiptranslate">Português</span>
+                <i class="fa-solid fa-caret-down"></i>
+            </div>
+            <div class="options">
+                <div class="option" data-value="pt" data-img="https://img.icons8.com/color/48/brazil.png">
+                    <img src="https://img.icons8.com/color/48/brazil.png" alt="Flag">
+                    <span class="skiptranslate">Português</span>
+                </div>
+                <div class="option" data-value="en" data-img="https://img.icons8.com/color/48/usa.png">
+                    <img src="https://img.icons8.com/color/48/usa.png" alt="Flag">
+                    <span class="skiptranslate">English</span>
+                </div>
+                <div class="option" data-value="fr" data-img="https://img.icons8.com/color/48/congo.png">
+                    <img src="https://img.icons8.com/color/48/congo.png" alt="Flag">
+                    <span class="skiptranslate">Français</span>
+                </div>
+                <div class="option" data-value="ar" data-img="https://img.icons8.com/color/48/syria.png">
+                    <img src="https://img.icons8.com/color/48/syria.png" alt="Flag">
+                    <span class="skiptranslate">عربي</span>
+                </div>
+            </div>
+        </div>
+        <!-- <img class="logo" src="imgs/logo.png" alt="ícone sem fronteiras"> -->
+        <h3 id="titulo-header">Conversa Sem Fronteiras</h3>
+    </div>
+    <div id="not-auth-user" class="cont-btn">
+        <a class="btn" href="login.html">Entrar</a>
+        <a class="btn" href="registrar.html">Registrar</a>
+    </div>
+    <div id="auth-user" class="cont-btn">
+        <!-- coisa horrenda -->
+        <span>Bem-vindo, <span id="nome-usuario"></span>!</span>
+        <button id="logout-btn" class="btn">Logout</button>
+    </div>
+</header>
+
+<main>
+    <div id="login-main">
+        <h1>Entrar</h1>
+        <form id="login-form">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required autocomplete="email">
+            <span id="email-error" class="error-message" aria-live="polite"></span>
+
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required autocomplete="current-password">
+
+            <button type="submit">Entrar</button>
+        </form>
+        <p class="login-link">Não tem uma conta? <a href="registrar.html">Registrar-se</a></p>
+        <a id="back-to-home" href="../../index.html">Voltar para a Página Inicial</a>
+
+    </div>
+</main>
+
+<footer>
+    <img class="logo" src="../../imgs/logo.png" alt="ícone sem fronteiras">
+    <div id="container-right-footer">
+        <div id="container-txt-footer">Sem Fronteiras</div>
+        <div id="container-icones">
+            <a class="btn-footer" id="whatsapp" href=""><i class="fa-brands fa-whatsapp"></i></a>
+            <a class="btn-footer" id="instagram" href="https://www.instagram.com/conversa_sem_fronteiras/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <!-- <a class="btn-footer" href=""><i class="fa-brands fa-youtube"></i></a> -->
+            <!-- <a class="btn-footer" href=""><i class="fa-brands fa-twitter"></i></a> -->
+            <a class="btn-footer" id="linkedin" href=""><i class="fa-brands fa-linkedin-in"></i></a>
+            <!-- <a class="btn-footer" href=""><i class="fa-brands fa-discord"></i></a> -->
+        </div>
+    </div>
+</footer>
+
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script src="../../script/index.js"></script>
+<script src="../../script/login.js"></script>
+</body>
+</html>

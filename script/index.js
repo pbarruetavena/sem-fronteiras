@@ -1,34 +1,66 @@
+function loadMenuItems() {
+    const menuItems = document.querySelectorAll(".menu-item");
+    const containers = document.querySelectorAll(".container");
+
+    const activateMenuItem = (menuItem) => {
+        menuItems.forEach(i => i.classList.remove("selected"));
+
+        menuItem.classList.add("selected");
+
+        containers.forEach(container => container.classList.remove("visible"));
+
+        const targetId = menuItem.getAttribute("data-target");
+        const targetContainer = document.getElementById(targetId);
+        if (targetContainer) {
+            targetContainer.classList.add("visible");
+        }
+    };
+
+    const firstMenuItem = menuItems[0];
+    if (firstMenuItem) {
+        activateMenuItem(firstMenuItem);
+    }
+
+    menuItems.forEach(item => {
+        item.addEventListener("click", () => {
+            activateMenuItem(item);
+        });
+    });
+}
+
+function loadAuth() {
+    // Verificar se o usuário está logado
+    const usuario = JSON.parse(localStorage.getItem("userLogged"));
+
+    const nomeUsuario = document.getElementById("nome-usuario");
+    const logoutBtn = document.getElementById("logout-btn");
+
+    const notAuthUser = document.getElementById("not-auth-user");
+    const authUser = document.getElementById("auth-user");
+
+    if (usuario) {
+        // Se o usuário estiver logado, mostrar saudação
+        notAuthUser.style.display = "none";
+        authUser.style.display = "flex";
+        nomeUsuario.textContent = usuario.name;
+    } else {
+        // Se o usuário não estiver logado, mostrar os botões
+        notAuthUser.style.display = "flex";
+        authUser.style.display = "none";
+    }
+    //Bingos
+    //Logout
+    logoutBtn.addEventListener("click", () => {
+        localStorage.removeItem("userLogged");
+        window.location.reload();
+    });
+}
 
 // passar o slide de container
 document.addEventListener("DOMContentLoaded", () => {
-    const menuItems = document.querySelectorAll(".menu-item");
-    const containers = document.querySelectorAll(".container");
-  
-    const activateMenuItem = (menuItem) => {
-      menuItems.forEach(i => i.classList.remove("selected"));
-  
-      menuItem.classList.add("selected");
-  
-      containers.forEach(container => container.classList.remove("visible"));
-  
-      const targetId = menuItem.getAttribute("data-target");
-      const targetContainer = document.getElementById(targetId);
-      if (targetContainer) {
-        targetContainer.classList.add("visible");
-      }
-    };
-  
-    const firstMenuItem = menuItems[0]; 
-    if (firstMenuItem) {
-      activateMenuItem(firstMenuItem);
-    }
-  
-    menuItems.forEach(item => {
-      item.addEventListener("click", () => {
-        activateMenuItem(item);
-      });
-    });
-  });
+    loadMenuItems();
+    loadAuth();
+});
 
 
 // Seletor de linguagem
