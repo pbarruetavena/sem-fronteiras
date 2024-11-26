@@ -285,15 +285,17 @@ footer img.logo {
 
 }
 
+}
+
 /* telas de notebook */
 @media (max-height: 680px) {
-    .containers .container p {
-        font-size: 14px;
-    }
-    .containers .container ul {
-        font-size: 14px;
-    }
-    .containers .container h1 {
-        font-size: 30px;
-    }
+  .containers .container p {
+    font-size: 14px;
+  }
+  .containers .container ul {
+    font-size: 14px;
+  }
+  .containers .container h1 {
+    font-size: 30px;
+  }
 }
