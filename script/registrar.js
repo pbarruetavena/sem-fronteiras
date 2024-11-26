@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const registerForm = document.getElementById("register-form");
+    const registerForm = document.getElementById("login-form");
     const emailInput = document.getElementById("email");
     const passwordInput = document.getElementById("password");
     const nameInput = document.getElementById("name");
