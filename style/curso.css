@@ -83,8 +83,8 @@
   }
 
   .section h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
+    font-size: 23px;
+    margin-bottom: 18px;
     color: #333;
   }
 
@@ -92,7 +92,7 @@
     color: #555;
   }
 
-  .section-card {
+  .section {
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 16px;
@@ -120,12 +120,17 @@
     font-size: 14px;
     color: #00c851;
     margin-top: 8px;
+    border: 1px solid #00c851;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 15px auto 0px auto;
   }
 
   .progress-bar-container {
     margin-top: 8px;
     height: 12px;
-    width: 100%;
+    width: 90%;
     background: #eee;
     border-radius: 6px;
     overflow: hidden;
@@ -133,7 +138,7 @@
 
   .progress-bar {
     height: 100%;
-    background: #00c851;
+    background: var(--verde-claro);
     width: 60%; /* Ajuste para o progresso (12/20 = 60%) */
   }
 
@@ -143,8 +148,33 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 90%;
   }
 
   .trophy-icon {
     color: #5cacee;
   }
+
+
+.btn-acessar {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    border: 1px solid var(--verde-claro);
+    border-radius: 100px;
+    padding: 13px;
+    font-size: 18px;
+    color: var(--verde-claro);
+}
+.btn-acessar:hover {
+    background-color: var(--verde-claro);
+    color: white;
+    cursor: pointer;
+}
+
+.status i {
+    background-color: #00c851;
+    border-radius: 1000px;
+    padding: 10px 11px;
+    color: white;
+}
