@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
             localStorage.setItem("userLogged", JSON.stringify(user));
 
             alert("Login realizado com sucesso!");
-            window.location.href = "/sem-fronteiras/index.html"; // Redirecionar após login
+            window.location.href = "../curso.html"; // Redirecionar após login
         } else {
             alert("Email ou senha incorretos.");
         }

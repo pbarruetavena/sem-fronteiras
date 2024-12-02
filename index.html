@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,134 +9,310 @@
     <link rel="stylesheet" href="style/index.css">
     <script src="https://kit.fontawesome.com/633a590c1f.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-<div id="google_translate_element"></div>
-<header>
-    <div id="left-header">
-        <!-- <select id="select-idioma">
-            <option value="br"><img src="https://goodies.icons8.com/web/common/header/flags/br.svg">Brasil</option>
-            <option value="en"><img width="48" height="48" src="https://img.icons8.com/color/48/brazil-circular.png" alt="brazil-circular"/>EUA</option>
-        </select> -->
-        <div class="custom-select">
-            <div class="selected-option">
-                <img id="selected-flag" src="https://img.icons8.com/color/48/brazil.png" alt="Flag">
-                <span id="selected-text" class="skiptranslate">Português</span>
-                <i class="fa-solid fa-caret-down"></i>
-            </div>
-            <div class="options">
-                <div class="option" data-value="pt" data-img="https://img.icons8.com/color/48/brazil.png">
-                    <img src="https://img.icons8.com/color/48/brazil.png" alt="Flag">
-                    <span class="skiptranslate">Português</span>
+    <div id="google_translate_element"></div>
+    <header>
+        <div id="left-header">
+            <div class="custom-select">
+                <div class="selected-option">
+                    <img id="selected-flag" src="https://img.icons8.com/color/48/brazil.png" alt="Flag">
+                    <span id="selected-text" class="skiptranslate">Português</span>
+                    <i class="fa-solid fa-caret-down"></i>
                 </div>
-                <div class="option" data-value="en" data-img="https://img.icons8.com/color/48/usa.png">
-                    <img src="https://img.icons8.com/color/48/usa.png" alt="Flag">
-                    <span class="skiptranslate">English</span>
-                </div>
-                <div class="option" data-value="fr" data-img="https://img.icons8.com/color/48/congo.png">
-                    <img src="https://img.icons8.com/color/48/congo.png" alt="Flag">
-                    <span class="skiptranslate">Français</span>
-                </div>
-                <div class="option" data-value="ar" data-img="https://img.icons8.com/color/48/syria.png">
-                    <img src="https://img.icons8.com/color/48/syria.png" alt="Flag">
-                    <span class="skiptranslate">عربي</span>
+                <div class="options">
+                    <div class="option" data-value="pt" data-img="https://img.icons8.com/color/48/brazil.png">
+                        <img src="https://img.icons8.com/color/48/brazil.png" alt="Flag">
+                        <span class="skiptranslate">Português</span>
+                    </div>
+                    <div class="option" data-value="en" data-img="https://img.icons8.com/color/48/usa.png">
+                        <img src="https://img.icons8.com/color/48/usa.png" alt="Flag">
+                        <span class="skiptranslate">English</span>
+                    </div>
+                    <div class="option" data-value="fr" data-img="https://img.icons8.com/color/48/congo.png">
+                        <img src="https://img.icons8.com/color/48/congo.png" alt="Flag">
+                        <span class="skiptranslate">Français</span>
+                    </div>
+                    <div class="option" data-value="ar" data-img="https://img.icons8.com/color/48/syria.png">
+                        <img src="https://img.icons8.com/color/48/syria.png" alt="Flag">
+                        <span class="skiptranslate">عربي</span>
+                    </div>
                 </div>
             </div>
+            <img src="imgs/logo-app.png" id="titulo-header">
         </div>
-        <!-- <img class="logo" src="imgs/logo.png" alt="ícone sem fronteiras"> -->
-        <h3 id="titulo-header">Conversa Sem Fronteiras</h3>
-    </div>
-    <div id="not-auth-user" class="cont-btn">
-        <a class="btn" href="pages/auth/login.html">Entrar</a>
-        <a class="btn" href="pages/auth/registrar.html">Registrar</a>
-    </div>
-    <div id="auth-user" class="cont-btn">
-        <!-- coisa horrenda -->
-        <span>Bem-vindo, <span id="nome-usuario"></span>!</span>
-        <button id="logout-btn" class="btn">Logout</button>
-    </div>
-</header>
-
-<main>
-    <!-- <img id="img-lateral" src="imgs/mundo.png" alt="mundo"> -->
-    <nav class="menu">
-        <ul>
-            <li class="menu-item" data-target="nos">Nós</li>
-            <li class="menu-item" data-target="crise">Crise</li>
-            <li class="menu-item" data-target="inclusao">Inclusão</li>
-            <li class="menu-item" data-target="objetivos">Objetivos</li>
-            <li class="menu-item" data-target="contribua">Contribua</li>
-        </ul>
-    </nav>
-    <div class="containers">
-        <div id="nos" class="container">
-            <h1>Quem Somos</h1>
-            <p>A <strong>Conversa Sem Fronteiras</strong> é uma plataforma dedicada ao ensino de idiomas para refugiados, com o objetivo de ajudá-los a superar uma das maiores barreiras enfrentadas por aqueles que buscam recomeçar suas vidas em um novo país: a língua. Sabemos que a comunicação é a chave para uma integração bem-sucedida e para a construção de uma nova vida com dignidade. Através de cursos personalizados e adaptados às necessidades dos refugiados, nosso projeto visa não apenas ensinar um novo idioma, mas também criar uma rede de apoio global, onde pessoas de diferentes culturas podem se conectar e compartilhar experiências.</p>
-
-            <p>Nosso lema, <strong>"Superando Fronteiras Através da Comunicação"</strong>, reflete nossa missão de promover a inclusão social e oferecer oportunidades reais para aqueles que mais precisam. Não somos apenas uma plataforma educacional, somos um movimento que visa transformar vidas, fortalecer laços humanos e construir um mundo mais justo e solidário, onde todos tenham a oportunidade de se expressar, serem ouvidos e alcançar seus objetivos.</p>
-
-            <p>A <strong>Conversa Sem Fronteiras</strong> acredita que o aprendizado de um novo idioma é uma ferramenta poderosa de empoderamento, e que por meio da educação podemos ajudar a superar desafios e transformar realidades. Cada curso oferecido é uma oportunidade para que refugiados possam reescrever suas histórias, encontrar novas possibilidades e se integrar com mais facilidade às comunidades em que vivem.</p>
+        <div id="not-auth-user" class="cont-btn">
+            <a class="btn" href="pages/auth/login.html">Entrar</a>
+            <a class="btn" href="pages/auth/registrar.html">Registrar</a>
         </div>
+        <div id="auth-user" class="cont-btn">
+            <span>Bem-vindo, <span id="nome-usuario"></span>!</span>
+            <button id="logout-btn" class="btn">Logout</button>
+        </div>
+    </header>
+
+    <main>
+        <nav class="menu">
+            <ul>
+                <li class="menu-item" data-target="inicio">Início</li>
+                <li class="menu-item" data-target="crise">Crise</li>
+                <li class="menu-item" data-target="inclusao">Sobre nós</li>
+                <li class="menu-item" data-target="objetivo">Objetivos</li>
+                <li class="menu-item" data-target="contribua">Contribua</li>
+            </ul>
+        </nav>
+        <div class="containers">
+            <div id="inicio" class="container">
+
+                <img src="imgs/continentes.png" alt="Mapa dos Continentes" id="map">
+
+                <section id="sobre">
+                    <p> A Parla é dedicada a fornecer cursos de idiomas para refugiados, ajudando-os a superar barreiras
+                        linguísticas e
+                        facilitando sua integração em novas comunidades.</p>
+                </section>
+
+                <!-- Seção Objetivos -->
+                <section id="objetivos">
+                    <h2>Objetivos</h2>
+                    <div class="objetivo-item">Inclusão Social</div>
+                    <div class="objetivo-item">Aprendizagem Prática</div>
+                    <div class="objetivo-item">Suporte Global</div>
+                    <div class="objetivo-item">Confiança e Dignidade</div>
+                    <div class="objetivo-item">Oportunidades Educacionais</div>
+                </section>
+
+                <!-- Seção Preços -->
+                <section id="precos">
+                    <h2>Preços</h2>
+                    <section id="sobre">
+                        <p> Nossa plataforma é 100% gratuita!</p>
+                    </section>
+                </section>
+
+                <!-- Seção Depoimentos -->
+                <section id="depoimentos">
+                    <h2>Depoimentos</h2>
+                    <div class="depoimentos-wrapper">
+                        <div class="depoimento">"Este curso mudou minha vida!"</div>
+                        <div class="depoimento">"Aprendi o idioma muito rápido e já consegui um emprego."</div>
+                        <div class="depoimento">"A equipe é super atenciosa e dedicada."</div>
+                        <div class="depoimento">"Agora consigo me comunicar com minha nova comunidade!"</div>
+                    </div>
+                    <button class="seta seta-esquerda">&lt;</button>
+                    <button class="seta seta-direita">&gt;</button>
+                </section>
+
+            </div>
+        </div>
+
+        <!--TOPICO CRISE-->
         <div id="crise" class="container">
-            <h1>A Crise dos Refugiados</h1>
-            <p>O mundo tem testemunhado um aumento no número de refugiados, vítimas de crises humanitárias e conflitos em várias partes do globo. Entre as principais causas de deslocamento forçado, estão as guerras, perseguições, mudanças climáticas e crises econômicas que fazem com que milhões de pessoas se vejam obrigadas a deixar seus países em busca de segurança e uma vida melhor. No Brasil, a chegada de refugiados, especialmente de países como Venezuela, Síria e Haiti, aumentou consideravelmente nos últimos anos, trazendo consigo grandes desafios de adaptação.</p>
+            <section id="refugiados-section">
+                <div class="content-wrapper">
+                    <h1>A Crise dos Refugiados</h1>
+                    <div class="text-content">
+                        <p>O mundo tem testemunhado um aumento no número de refugiados, vítimas de crises humanitárias e
+                            conflitos em várias partes do globo. Entre as principais causas de deslocamento forçado,
+                            estão as guerras, perseguições, mudanças climáticas e crises econômicas que fazem com que
+                            milhões de pessoas se vejam obrigadas a deixar seus países em busca de segurança e uma vida
+                            melhor. No Brasil, a chegada de refugiados, especialmente de países como Venezuela, Síria e
+                            Haiti, aumentou consideravelmente nos últimos anos, trazendo consigo grandes desafios de
+                            adaptação.</p>
 
-            <p>Um dos maiores obstáculos para os refugiados ao chegarem em um novo país é a <strong>barreira linguística</strong>. Para muitos, aprender o idioma local é o primeiro passo para se inserir na sociedade e acessar serviços essenciais, como saúde, educação, moradia e, principalmente, emprego. Sem o domínio da língua, o refugiado enfrenta dificuldades não apenas para garantir seu sustento, mas também para ter acesso a seus direitos básicos e participar de atividades sociais e culturais.</p>
+                        <p>Um dos maiores obstáculos para os refugiados ao chegarem em um novo país é a <strong>barreira
+                                linguística</strong>. Para muitos, aprender o idioma local é o primeiro passo para se
+                            inserir na sociedade e acessar serviços essenciais, como saúde, educação, moradia e,
+                            principalmente, emprego. Sem o domínio da língua, o refugiado enfrenta dificuldades não
+                            apenas para garantir seu sustento, mas também para ter acesso a seus direitos básicos e
+                            participar de atividades sociais e culturais.</p>
 
-            <p>A <strong>Conversa Sem Fronteiras</strong> surgiu com o intuito de enfrentar esse desafio diretamente. Sabemos que o domínio do idioma é fundamental para que os refugiados possam se integrar de forma plena em sua nova realidade, reconquistando sua autonomia e dignidade. Ao oferecer cursos de idiomas adaptados às suas necessidades, queremos ajudá-los a superar essa barreira e garantir que tenham as ferramentas necessárias para uma reintegração bem-sucedida na sociedade brasileira. Em um contexto de crescente mobilidade global e aumento das crises humanitárias, o nosso projeto surge como uma resposta urgente e essencial para ajudar refugiados a reconstruírem suas vidas.</p>
+                        <p><strong>Conversa Sem Fronteiras</strong> surgiu com o intuito de enfrentar esse desafio
+                            diretamente. Sabemos que o domínio do idioma é fundamental para que os refugiados possam se
+                            integrar de forma plena em sua nova realidade, reconquistando sua autonomia e dignidade. Ao
+                            oferecer cursos de idiomas adaptados às suas necessidades, queremos ajudá-los a superar essa
+                            barreira e garantir que tenham as ferramentas necessárias para uma reintegração bem-sucedida
+                            na sociedade brasileira. Em um contexto de crescente mobilidade global e aumento das crises
+                            humanitárias, o nosso projeto surge como uma resposta urgente e essencial para ajudar
+                            refugiados a reconstruírem suas vidas.</p>
+                    </div>
+                </div>
+                <div class="image-wrapper">
+                    <img src="imgs/ajuda.png" alt="pessoas se ajudando" />
+                </div>
+            </section>
         </div>
+
         <div id="inclusao" class="container">
-            <h1>Inclusão Social</h1>
-            <p>A <strong>inclusão social</strong> é um dos pilares centrais da nossa plataforma. Acreditamos que a superação das barreiras linguísticas não é apenas um processo de ensino, mas uma maneira de promover o acesso dos refugiados a oportunidades iguais em diversas áreas da vida. Desde o acesso ao mercado de trabalho, até a participação em atividades culturais e sociais, o conhecimento de um novo idioma é um fator decisivo para uma integração bem-sucedida.</p>
+            <section id="sobre-nos">
 
-            <p>Nosso trabalho vai além do ensino de um idioma. Buscamos criar um ambiente acolhedor, onde refugiados possam se sentir parte de uma comunidade, desenvolvendo relações de apoio mútuo com outros refugiados e com a sociedade local. O <strong>Conversa Sem Fronteiras</strong> se propõe a ser uma plataforma não apenas de ensino, mas de <strong>acolhimento</strong>, criando uma rede de solidariedade que facilita o processo de adaptação.</p>
+                <h2 class="section-title">Sobre Nós</h2>
 
-            <p>Através de nossa plataforma digital, acessível a partir de qualquer dispositivo com conexão à internet, conseguimos levar o ensino de idiomas a refugiados de diversas localidades, adaptando o conteúdo às suas realidades. Além disso, o ensino é contextualizado, focando em situações cotidianas como interações com serviços públicos, entrevistas de emprego e convivência em sociedade. A <strong>inclusão multicultural</strong> também é um dos nossos princípios. Além de oferecer cursos de português, que é a língua mais essencial para os refugiados no Brasil, também oferecemos cursos de outras línguas importantes, como espanhol e inglês, ampliando as oportunidades de integração e empregabilidade para refugiados de diferentes origens.</p>
+                <div class="content">
+                    <!-- Bloco 1 -->
+                    <div class="card">
+                        <h3>Quem Somos</h3>
+                        <p>A empresa <strong>Conversa Sem Fronteiras</strong> é dedicada a fornecer cursos de idiomas
+                            para refugiados, ajudando-os a superar barreiras linguísticas e facilitando sua integração
+                            em novas comunidades. Com o lema <em>"Superando Fronteiras Através da Comunicação"</em>,
+                            buscamos transformar vidas e fortalecer laços humanos, promovendo um mundo onde todos possam
+                            se expressar e serem ouvidos.</p>
+                    </div>
+
+                    <!-- Bloco 2 -->
+                    <div class="card">
+                        <h3>Segmento</h3>
+                        <p>Nosso segmento de atuação está diretamente ligado à <strong>educação</strong> e à
+                            <strong>inclusão social</strong>, com foco nos refugiados. Oferecemos soluções educacionais
+                            inovadoras e acessíveis, utilizando plataformas online que atendem às necessidades
+                            específicas de cada aluno, como horários flexíveis e conteúdos práticos, promovendo
+                            integração por meio do ensino de idiomas.
+                        </p>
+                    </div>
+
+                    <!-- Bloco 3 -->
+                    <div class="card">
+                        <h3>Histórico</h3>
+                        <p>A <strong>Conversa Sem Fronteiras</strong> nasceu para apoiar refugiados no Brasil,
+                            oferecendo cursos de português e outros idiomas que ajudam a superar as barreiras
+                            linguísticas. Desde sua criação, a empresa vem alinhando-se às demandas globais por inclusão
+                            e integração, contribuindo para a construção de uma sociedade mais solidária e acolhedora.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="additional-info">
+                    <h4>Por que existimos?</h4>
+                    <p>Com o aumento das crises humanitárias globais, nossa missão é capacitar refugiados com
+                        ferramentas essenciais para reconstruir suas vidas. Trabalhamos para que o aprendizado de
+                        idiomas seja uma ponte para o acesso a serviços básicos, mercado de trabalho e uma nova
+                        realidade cheia de oportunidades.</p>
+
+                    <h4>Impacto Social</h4>
+                    <p>De acordo com o Relatório Anual de Refúgio no Brasil de 2023, a demanda por programas
+                        educacionais é crescente. O <strong>Conversa Sem Fronteiras</strong> atende a essa necessidade
+                        com dedicação, promovendo a inclusão multicultural e dando aos refugiados os recursos
+                        necessários para uma integração digna e independente.</p>
+                </div>
+            </section>
         </div>
-        <div id="objetivos" class="container">
-            <h1>Metas da Conversa Sem Fronteiras</h1>
-            <p>A <strong>Conversa Sem Fronteiras</strong> tem como principais metas a capacitação de refugiados por meio do ensino de idiomas e a promoção de sua inclusão social e cultural no Brasil. Nosso objetivo é criar um impacto positivo na vida dos refugiados, fornecendo-lhes as habilidades linguísticas necessárias para uma integração bem-sucedida e sustentável. A seguir, detalhamos nossas metas principais:</p>
 
-            <ul>
-                <li><strong>Capacitar refugiados com habilidades linguísticas</strong>: Oferecer cursos de idiomas que ajudem refugiados a se comunicarem de maneira eficaz no Brasil, facilitando sua integração social, cultural e econômica.</li>
-                <li><strong>Promover a inclusão social</strong>: Superar as barreiras linguísticas e garantir que refugiados possam participar plenamente da vida social e comunitária.</li>
-                <li><strong>Criar uma comunidade de apoio e colaboração</strong>: Fomentar um ambiente de troca e aprendizado, onde refugiados e voluntários possam se conectar, compartilhar experiências e apoiar uns aos outros.</li>
-                <li><strong>Aumentar a empregabilidade dos refugiados</strong>: Oferecer uma educação linguística prática para aumentar as oportunidades de inserção no mercado de trabalho.</li>
-                <li><strong>Fortalecer a autoestima e a independência</strong>: Promover confiança para que os refugiados reconstruam suas vidas de maneira autônoma.</li>
-                <li><strong>Sensibilizar sobre a importância da comunicação e da inclusão</strong>: Conscientizar a sociedade sobre a importância da educação linguística para a integração de refugiados.</li>
-            </ul>
+        <div id="objetivo" class="container">
+            <section class="section-metas">
+                <h1 class="title">Objetivos da Conversa Sem Fronteiras</h1>
+                <p class="description">
+                    A empresa <strong>Conversa Sem Fronteiras</strong> tem como principais metas a capacitação de refugiados por
+                    meio do ensino de idiomas e a promoção de sua inclusão social e cultural no Brasil. Nosso objetivo é
+                    criar um impacto positivo na vida dos refugiados, fornecendo-lhes as habilidades linguísticas
+                    necessárias para uma integração bem-sucedida e sustentável. A seguir, detalhamos nossas metas
+                    principais:
+                </p>
+                <div class="goals-grid">
+                    <div class="goal-item">
+                        <i class="fa-solid fa-language"></i>
+                        <h3>Capacitar refugiados com habilidades linguísticas</h3>
+                        <p>Oferecer cursos de idiomas que ajudem refugiados a se comunicarem de maneira eficaz no
+                            Brasil,
+                            facilitando sua integração social, cultural e econômica.</p>
+                    </div>
+                    <div class="goal-item">
+                        <i class="fa-solid fa-users"></i>
+                        <h3>Promover a inclusão social</h3>
+                        <p>Superar as barreiras linguísticas e garantir que refugiados possam participar plenamente da
+                            vida social e comunitária.</p>
+                    </div>
+                    <div class="goal-item">
+                        <i class="fa-solid fa-hands-helping"></i>
+                        <h3>Criar uma comunidade de apoio e colaboração</h3>
+                        <p>Fomentar um ambiente de troca e aprendizado, onde refugiados e voluntários possam se
+                            conectar, compartilhar experiências e apoiar uns aos outros.</p>
+                    </div>
+                    <div class="goal-item">
+                        <i class="fa-solid fa-briefcase"></i>
+                        <h3>Aumentar a empregabilidade dos refugiados</h3>
+                        <p>Oferecer uma educação linguística prática para aumentar as oportunidades de inserção no
+                            mercado de trabalho.</p>
+                    </div>
+                    <div class="goal-item">
+                        <i class="fa-solid fa-heart"></i>
+                        <h3>Fortalecer a autoestima e a independência</h3>
+                        <p>Promover confiança para que os refugiados reconstruam suas vidas de maneira autônoma.</p>
+                    </div>
+                    <div class="goal-item">
+                        <i class="fa-solid fa-bullhorn"></i>
+                        <h3>Sensibilizar sobre a importância da comunicação e da inclusão</h3>
+                        <p>Conscientizar a sociedade sobre a importância da educação linguística para a integração de
+                            refugiados.</p>
+                    </div>
+                </div>
+            </section>
         </div>
+
+
         <div id="contribua" class="container">
-            <h1>Como Contribuir</h1>
-            <p>A <strong>Conversa Sem Fronteiras</strong> é uma plataforma sem fins lucrativos que visa ajudar refugiados a superarem as barreiras linguísticas e se integrarem com dignidade em suas novas comunidades. Nossa missão não seria possível sem a ajuda de pessoas e organizações dispostas a contribuir para a inclusão e o bem-estar de milhares de refugiados. Existem várias formas de <strong>contribuir</strong> para nossa causa:</p>
-
-            <ul>
-                <li><strong>Doações</strong>: Sua contribuição financeira ajuda a garantir a continuidade dos cursos e a manutenção da plataforma.</li>
-                <li><strong>Voluntariado</strong>: Seja um voluntário e compartilhe seu conhecimento com refugiados.</li>
-                <li><strong>Parcerias</strong>: Firmar parcerias com ONGs e empresas para fortalecer nossa rede de apoio.</li>
-                <li><strong>Divulgação e engajamento</strong>: Ajude a divulgar nosso trabalho e engajar mais pessoas na causa.</li>
-            </ul>
-
-            <p>Com o apoio de todos, podemos garantir que mais refugiados tenham acesso a uma educação que transforme suas vidas. Junte-se a nós e faça parte dessa rede de solidariedade. Juntos, podemos construir um futuro mais inclusivo para todos.</p>
+            <section class="contribuir-section">
+                    <h2 class="section-title">Como Contribuir</h2>
+                    <p class="section-description">
+                        A <strong>Conversa Sem Fronteiras</strong> é uma plataforma sem fins lucrativos que visa ajudar refugiados a superarem as barreiras linguísticas e se integrarem com dignidade em suas novas comunidades. Nossa missão não seria possível sem a ajuda de pessoas e organizações dispostas a contribuir para a inclusão e o bem-estar de milhares de refugiados. Existem várias formas de contribuir para nossa causa:
+                    </p>
+                    <div class="cards-container">
+                        <div class="card">
+                            <h3>Doações</h3>
+                            <p>Sua contribuição financeira ajuda a garantir a continuidade dos cursos e a manutenção da plataforma.</p>
+                        </div>
+                        <div class="card">
+                            <h3>Voluntariado</h3>
+                            <p>Seja um voluntário e compartilhe seu conhecimento com refugiados.</p>
+                        </div>
+                        <div class="card">
+                            <h3>Parcerias</h3>
+                            <p>Firmar parcerias com ONGs e empresas para fortalecer nossa rede de apoio.</p>
+                        </div>
+                        <div class="card">
+                            <h3>Divulgação e engajamento</h3>
+                            <p>Ajude a divulgar nosso trabalho e engajar mais pessoas na causa.</p>
+                        </div>
+                    </div>
+                    <p class="final-call">
+                        Com o apoio de todos, podemos garantir que mais refugiados tenham acesso a uma educação que transforme suas vidas. Junte-se a nós e faça parte dessa rede de solidariedade. <strong>Juntos, podemos construir um futuro mais inclusivo para todos.</strong>
+                    </p>
+            
+                    <!-- Formulário para envio de mensagens -->
+                    <form class="message-form">
+                        <h2>Envie sua mensagem</h2>
+                        <div class="form-group">
+                            <input type="text" placeholder="Seu nome" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Seu e-mail" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Digite sua mensagem..." rows="5" required></textarea>
+                        </div>
+                        <button type="submit">Enviar</button>
+                    </form>
+            </section>
         </div>
-    </div>
-</main>
+    </main>
 
-<footer>
-    <img class="logo" src="imgs/logo.png" alt="ícone sem fronteiras">
-    <div id="container-right-footer">
-        <div id="container-txt-footer">Sem Fronteiras</div>
-        <div id="container-icones">
-            <a class="btn-footer" id="whatsapp" href=""><i class="fa-brands fa-whatsapp"></i></a>
-            <a class="btn-footer" id="instagram" href="https://www.instagram.com/conversa_sem_fronteiras/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            <!-- <a class="btn-footer" href=""><i class="fa-brands fa-youtube"></i></a> -->
-            <!-- <a class="btn-footer" href=""><i class="fa-brands fa-twitter"></i></a> -->
-            <a class="btn-footer" id="linkedin" href=""><i class="fa-brands fa-linkedin-in"></i></a>
-            <!-- <a class="btn-footer" href=""><i class="fa-brands fa-discord"></i></a> -->
+    <footer>
+        <img class="logo" src="imgs/logo.png" alt="ícone sem fronteiras">
+        <div id="container-right-footer">
+            <div id="container-txt-footer">Sem Fronteiras</div>
+            <div id="container-icones">
+                <a class="btn-footer" id="whatsapp" href=""><i class="fa-brands fa-whatsapp"></i></a>
+                <a class="btn-footer" id="instagram" href="https://www.instagram.com/conversa_sem_fronteiras/"
+                    target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <!-- <a class="btn-footer" href=""><i class="fa-brands fa-youtube"></i></a> -->
+                <!-- <a class="btn-footer" href=""><i class="fa-brands fa-twitter"></i></a> -->
+                <a class="btn-footer" id="linkedin" href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                <!-- <a class="btn-footer" href=""><i class="fa-brands fa-discord"></i></a> -->
+            </div>
         </div>
-    </div>
-</footer>
+    </footer>
 
-<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-<script src="script/index.js"></script>
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script src="script/index.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,28 @@
+
+/*menu*/
+.menu {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.menu-item {
+    cursor: pointer;
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.menu-item:hover,
+.menu-item.selected {
+    color: var(--verde-claro);
+    border-bottom: 2px solid var(--verde-claro);
+}

@@ -136,3 +136,23 @@ function updateCustomSelect(googleSelect) {
         selectedText.textContent = languageText;
     }
 }
+
+// Depoimentos Carrossel
+const wrapper = document.querySelector('.depoimentos-wrapper');
+const depoimentos = document.querySelectorAll('.depoimento');
+let index = 0;
+
+document.querySelector('.seta-esquerda').addEventListener('click', () => {
+    index = (index > 0) ? index - 1 : depoimentos.length - 1;
+    updateCarousel();
+});
+
+document.querySelector('.seta-direita').addEventListener('click', () => {
+    index = (index < depoimentos.length - 1) ? index + 1 : 0;
+    updateCarousel();
+});
+
+function updateCarousel() {
+    const width = wrapper.offsetWidth;
+    wrapper.style.transform = `translateX(-${index * width}px)`;
+}

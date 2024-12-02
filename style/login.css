@@ -11,6 +11,9 @@ main {
 header h3 {
     font-size: 1.5rem;
 }
+#titulo-header {
+    width: 20%;
+}
 
 h1 {
     color: var(--branco);
