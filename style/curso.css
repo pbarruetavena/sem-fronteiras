@@ -1,28 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
-/*menu*/
-.menu {
-    padding: 10px 0;
-    text-align: center;
+:root {
+    /* 628B2D */
+    --verde-claro: #6f9d33;
+    --verde-escuro: #243b06;
+    --branco: #ffffff;
+    --cinza-texto: #666666;
+
 }
 
-.menu ul {
-    list-style: none;
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: "Host Grotesk", sans-serif;
+  }
+
+  body {
+    background-color: #f7f7f7;
+  }
+
+  header {
     display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.menu-item {
-    cursor: pointer;
+    justify-content: space-between;
+    align-items: center;
     padding: 10px 20px;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
+    background-color: #ffffff;
+    height: 100px;
+    margin-left: 30px;
+    margin-right: 20px;
+  }
 
-.menu-item:hover,
-.menu-item.selected {
-    color: var(--verde-claro);
-    border-bottom: 2px solid var(--verde-claro);
-}
+  header h1 {
+    font-size: 30px;
+    color: #333;
+  }
+
+  header .user-info {
+    display: flex;
+    align-items: center;
+  }
+
+  header .user-info p {
+    margin-right: 10px;
+    color: #333;
+  }
+
+  main {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .sidebar {
+    width: 200px;
+    background-color: #ffffff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+
+  .sidebar ul {
+    list-style: none;
+  }
+
+  .sidebar li {
+    margin: 10px 0;
+  }
+
+  .content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .section {
+    background-color: #ffffff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+
+  .section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+
+  .section p {
+    color: #555;
+  }
+
+  .section-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+    font-family: Arial, sans-serif;
+    position: relative;
+  }
+
+  .completed {
+    background-color: #f7fdf7;
+    border-left: 4px solid #00c851;
+  }
+
+  .progress {
+    background-color: #e6f7ff;
+    border-left: 4px solid #5cacee;
+  }
+
+  .section-title {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .status {
+    font-size: 14px;
+    color: #00c851;
+    margin-top: 8px;
+  }
+
+  .progress-bar-container {
+    margin-top: 8px;
+    height: 12px;
+    width: 100%;
+    background: #eee;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+
+  .progress-bar {
+    height: 100%;
+    background: #00c851;
+    width: 60%; /* Ajuste para o progresso (12/20 = 60%) */
+  }
+
+  .progress-info {
+    font-size: 14px;
+    margin-top: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .trophy-icon {
+    color: #5cacee;
+  }

@@ -211,6 +211,14 @@ header > div > h3 {
     margin: 0;
 }
 
+p.section-description {
+  text-align: justify;
+}
+
+p.final-call {
+  text-align: justify;
+}
+
 .container ul {
     margin: 1rem;
 }
@@ -389,7 +397,10 @@ h2::after {
     display: flex;
     flex-direction: column;
 }
-
+#precos p {
+  text-align: justify;
+  margin-left: 30px;
+}
 #precos ul {
     list-style-type: none;
     padding: 0;
@@ -439,6 +450,7 @@ h2::after {
   font-style: italic;
   text-align: justify;
   margin-left: 15px;
+  margin-top: 10px;
 }
 
 .depoimento i.aspas {
@@ -765,7 +777,8 @@ section#sobre-nos {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
+    margin-top: 40px;
 }
 
 .card {
@@ -799,13 +812,12 @@ section#sobre-nos {
     text-align: center;
     margin-bottom: 40px;
     color: #333;
-    font-weight: bold;
 }
 
 /* Estilo do formulário */
 .message-form {
     max-width: 500px;
-    margin: 0 auto;
+    margin: 30px auto 0 auto;
     background: #fff;
     border-radius: 10px;
     padding: 30px;
