@@ -74,12 +74,14 @@
 
                 <!-- Seção Objetivos -->
                 <section id="objetivos">
-                    <h2>Objetivos</h2>
-                    <div class="objetivo-item">Inclusão Social</div>
-                    <div class="objetivo-item">Aprendizagem Prática</div>
-                    <div class="objetivo-item">Suporte Global</div>
-                    <div class="objetivo-item">Confiança e Dignidade</div>
-                    <div class="objetivo-item">Oportunidades Educacionais</div>
+                    <h2 id="titulo-objetivos">Objetivos</h2>
+                    <div id="container-objetivos">
+                        <div class="objetivo-item">Inclusão Social</div>
+                        <div class="objetivo-item">Aprendizagem Prática</div>
+                        <div class="objetivo-item">Suporte Global</div>
+                        <div class="objetivo-item">Confiança e Dignidade</div>
+                        <div class="objetivo-item">Oportunidades Educacionais</div>
+                    </div>
                 </section>
 
                 <!-- Seção Preços -->
@@ -93,14 +95,36 @@
                 <!-- Seção Depoimentos -->
                 <section id="depoimentos">
                     <h2>Depoimentos</h2>
-                    <div class="depoimentos-wrapper">
-                        <div class="depoimento">"Este curso mudou minha vida!"</div>
-                        <div class="depoimento">"Aprendi o idioma muito rápido e já consegui um emprego."</div>
-                        <div class="depoimento">"A equipe é super atenciosa e dedicada."</div>
-                        <div class="depoimento">"Agora consigo me comunicar com minha nova comunidade!"</div>
+                    <div id="depoimento-container">
+                        <div class="depoimentos-wrapper">
+                            <div class="depoimento">
+                                <i class="aspas fa-solid fa-quote-right"></i>
+                                <div class="txt-depoimento">"Ao participar deste curso, descobri novas habilidades e ganhei confiança para enfrentar desafios. Ele abriu portas que eu jamais imaginei serem possíveis."</div>
+                                <i class="user fa-solid fa-user"></i>
+                                <span class="titulo-depoimento">- Cristiano Amaral Malford</span>
+                                </div>
+                            <div class="depoimento">
+                                <i class="aspas fa-solid fa-quote-right"></i>
+                                <div class="txt-depoimento">"Com o método dinâmico e envolvente, aprendi de forma eficiente. Agora, uso meu novo conhecimento para crescer profissionalmente e realizar sonhos."</div>
+                                <i class="user fa-solid fa-user"></i>
+                                <span class="titulo-depoimento">- Fabricio Vias</span>
+                            </div>
+                            <div class="depoimento">
+                                <i class="aspas fa-solid fa-quote-right"></i>
+                                <div class="txt-depoimento">"Os instrutores sempre estavam disponíveis para tirar dúvidas e oferecer apoio. Essa dedicação fez toda a diferença no meu aprendizado."</div>
+                                <i class="user fa-solid fa-user"></i>
+                                <span class="titulo-depoimento">- Adson de Paula</span>
+                            </div>
+                            <div class="depoimento">
+                                <i class="aspas fa-solid fa-quote-right"></i>
+                                <div class="txt-depoimento">"Hoje, interajo com facilidade e faço parte de um ambiente que antes parecia distante. É incrível como a comunicação transforma vidas!"</div>
+                                <i class="user fa-solid fa-user"></i>
+                                <span class="titulo-depoimento">- Edelson Marcheti</span>
+                            </div>
+                        </div>
                     </div>
-                    <button class="seta seta-esquerda">&lt;</button>
-                    <button class="seta seta-direita">&gt;</button>
+                    <button class="seta seta-esquerda"><i class="fa-solid fa-chevron-left"></i></button>
+                    <button class="seta seta-direita"><i class="fa-solid fa-chevron-right"></i></button>
                 </section>
 
             </div>
@@ -313,6 +337,36 @@
 
     <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <script src="script/index.js"></script>
+    <script>
+        (function () {
+      // Inicialize o EmailJS com seu ID de usuário
+      emailjs.init("HkuDSbp69nY7U9Lwg"); // Substitua por seu User ID do EmailJS
+
+      document.getElementById("contactForm").addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        // Pegue os valores do formulário
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const message = document.getElementById("message").value;
+
+        // Envie o e-mail
+        emailjs.send("service_veijag2", "template_nb2jbfh", {
+          from_name: name,
+          from_email: email,
+          message: message,
+        }).then(
+          function (response) {
+            alert("Mensagem enviada com sucesso!");
+          },
+          function (error) {
+            alert("Ocorreu um erro ao enviar o e-mail: " + JSON.stringify(error));
+          }
+        );
+      });
+    })();
+
+    </script>
 </body>
 
 </html>

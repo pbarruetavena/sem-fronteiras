@@ -47,6 +47,8 @@ a {
     border-radius: 5px;
     cursor: pointer;
     font-size: 12px;
+    height: fit-content;
+
 }
 
 .custom-select i {
@@ -124,8 +126,9 @@ header {
 }
 .cont-btn .btn:hover {
     cursor: pointer;
-    background-color: var(--verde-escuro);
-    color: rgb(0, 0, 0);
+    background-color: var(--verde-claro);
+    color: white;
+    border-color: var(--verde-claro);
 }
 .cont-btn .btn:link,
 .cont-btn .btn:visited,
@@ -136,6 +139,7 @@ header {
 
 #titulo-header {
     width: 20%;
+    margin-left: 30px;
 }
 header > div:has(> h3) {
     margin-left: 30px;
@@ -146,6 +150,7 @@ header > div > h3 {
 #left-header {
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 
@@ -299,6 +304,9 @@ h2 {
     font-size: 28px;
     margin-bottom: 20px;
     position: relative;
+    align-self: flex-start;
+    margin-left: 30px;
+
 }
 
 h2::after {
@@ -326,12 +334,24 @@ h2::after {
 }
 
 /* Objetivos */
+#titulo-objetivos {
+  align-self: flex-start;
+    margin-left: 30px;
+}
 #objetivos {
     display: flex;
     justify-content: space-around;
     gap: 20px;
     flex-wrap: wrap;
     padding: 20px 0;
+    flex-direction: column;
+}
+
+#container-objetivos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .objetivo-item {
@@ -349,6 +369,8 @@ h2::after {
     text-align: center;
     font-weight: bold;
     cursor: pointer;
+    border: 1px solid #0000004d;
+    font-weight: normal;
 }
 
 .objetivo-item:hover {
@@ -364,6 +386,8 @@ h2::after {
     background-color: var(--verde-claro);
     color: var(--branco);
     box-shadow: 0 4px 6px var(--sombra);
+    display: flex;
+    flex-direction: column;
 }
 
 #precos ul {
@@ -382,36 +406,80 @@ h2::after {
     position: relative;
     overflow: hidden;
     width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#depoimento-container {
+  width: 60%;
+  margin: 0px auto;
 }
 
 .depoimentos-wrapper {
     display: flex;
     transition: transform 0.5s ease-in-out;
+    align-self: center;
 }
 
 .depoimento {
     flex: 0 0 100%;
     text-align: center;
-    padding: 20px;
+    padding: 20px 80px;
     background-color: #f1f1f1;
     margin: 10px;
-    border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
+
+.depoimento .txt-depoimento {
+  font-size: 20px;
+  font-style: italic;
+  text-align: justify;
+  margin-left: 15px;
+}
+
+.depoimento i.aspas {
+  width: fit-content;
+  color: var(--verde-claro);
+  transform: rotate(180deg);
+  font-size: 30px;
+}
+
+.depoimento i.user {
+  font-size: 50px;
+  border: 3px solid black;
+  margin: 20px;
+  border-radius: 100px;
+  padding: 15px 18px;
+  width: fit-content;
+  align-self: center;
+}
+
+.depoimento .titulo-depoimento {
+  color: gray;
+  font-style: italic;
+}
+
+.depoimento span {
+  font-size: 24px;
+  margin-left: 10px;
+}
+
 
 .seta {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: #1976d2;
-    color: white;
     border: none;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
     cursor: pointer;
+    width: 300px;
+    height: 100%;
+    font-size: 100px;
+    background-color: #ffffff00;
+    color: var(--verde-claro);
 }
 
 .seta-esquerda {
