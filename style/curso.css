@@ -24,16 +24,17 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    background-color: #ffffff;
+    padding: 10px 50px;
+    background-color: var(--verde-claro);
     height: 100px;
-    margin-left: 30px;
-    margin-right: 20px;
+    color: white;
+
   }
 
   header h1 {
     font-size: 30px;
     color: #333;
+    margin-left: 30px;
   }
 
   header .user-info {
@@ -56,8 +57,9 @@
     width: 200px;
     background-color: #ffffff;
     padding: 10px;
-    border: 1px solid #ddd;
     border-radius: 5px;
+    border-right: 1px solid #ddd;
+
   }
 
   .sidebar ul {
@@ -65,9 +67,17 @@
   }
 
   .sidebar li {
-    margin: 10px 0;
+    /* border-radius: 5px; */
+    padding: 8px;
+    text-align: center;
   }
 
+    .sidebar li:hover {
+        background: var(--verde-claro);
+        color: white;
+        transition: background-color 0.3s ease;
+        cursor: pointer;
+    }
   .content {
     flex: 1;
     display: flex;
@@ -136,6 +146,16 @@
     overflow: hidden;
   }
 
+  button#logout-btn {
+    border-color: white;
+    color: white;
+    background-color: var(--verde-claro);
+  }
+  button#logout-btn:hover {
+    background-color: white;
+    color: var(--verde-claro);
+  }
+
   .progress-bar {
     height: 100%;
     background: var(--verde-claro);
@@ -177,4 +197,33 @@
     border-radius: 1000px;
     padding: 10px 11px;
     color: white;
+}
+
+aside ul {
+    font-size: 20px;
+}
+
+p.msg-ita {
+    text-align: center;
+    font-size: 10px;
+    font-style: italic;
+    margin: 20px auto 10px 20px;
+}
+#sec-right {
+    max-width: 30vw;
+}
+.title-not {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.txt-not {
+    font-size: 13px;
+    text-align: justify;
+}
+
+#sec-right a,
+#sec-right a:visited,
+#sec-right a:link {
+    color: inherit;
 }

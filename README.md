@@ -1,4 +1,4 @@
-# Conversa Sem Fronteiras
+# Conversa Sem Fronteiras - Protótipo
 
 A empresa Conversa Sem Fronteiras é uma plataforma dedicada a fornecer cursos de idiomas para refugiados, ajudando-os a superar barreiras linguísticas e facilitando sua integração em novas comunidades. A visão central do projeto é criar uma rede de apoio que permita a comunicação global entre indivíduos de diferentes origens, promovendo a inclusão social e oferecendo oportunidades para um futuro melhor.
 
